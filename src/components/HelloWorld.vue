@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import getImg  from '../utils/imageUtil'
 
 defineProps<{ msg: string }>()
 
@@ -29,6 +30,7 @@ const count = ref(0)
     in your IDE for a better DX
   </p>
   <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
+  <img :src="getImg('2童年.png')" alt="">
 </template>
 
 <style scoped>
